@@ -1,0 +1,297 @@
+
+
+
+
+
+
+/*.logo a img*/
+/*{*/
+/*    width:210px*/
+/*}*/
+
+/*.flexGroup1*/
+/*{*/
+/*    display:flex;*/
+/*    justify-content:space-between;*/
+/*    align-items:center*/
+/*}*/
+
+/*.flexGroup2*/
+/*{*/
+/*    display:flex;*/
+/*    align-items:center*/
+/*}*/
+
+/*.flex1*/
+/*{*/
+/*    flex:1*/
+/*}*/
+
+/*.btn,.viewMore*/
+/*{*/
+/*    align-items:center*/
+/*}*/
+
+/*@media (max-width:767px) {*/
+/*    .pd4*/
+/*    {*/
+/*        margin-bottom:15px*/
+/*    }*/
+
+/*    .showDesktop*/
+/*    {*/
+/*        display:none!important*/
+/*    }*/
+/*}*/
+
+/*.checkbox input,.checkbox label,.radio label*/
+/*{*/
+/*    margin-bottom:0;*/
+/*    cursor:pointer*/
+/*}*/
+
+/*@media (min-width:768px) {*/
+/*    .pd4*/
+/*    {*/
+/*        padding:0 .3vw*/
+/*    }*/
+
+/*    .showMobile*/
+/*    {*/
+/*        display:none!important*/
+/*    }*/
+/*}*/
+
+/*@media (min-width:768px) and (max-width:1199px) {*/
+/*    .logo a img*/
+/*    {*/
+/*        width:15vw*/
+/*    }*/
+
+/*    .col1*/
+/*    {*/
+/*        width:calc((100% - 14vw)/ 2)*/
+/*    }*/
+/*}*/
+
+/*@media (min-width:1200px) {*/
+/*    .pd4*/
+/*    {*/
+/*        padding:0 4px*/
+/*    }*/
+
+/*    .col1*/
+/*    {*/
+/*        width:calc((100% - 180px)/ 2)*/
+/*    }*/
+/*}*/
+
+/*@media (min-width:768px) and (max-width:1199px) {*/
+/*    .col2*/
+/*    {*/
+/*        width:calc((100% - 5vw)/ 4)*/
+/*    }*/
+/*}*/
+
+/*@media (min-width:1200px) {*/
+/*    .col2*/
+/*    {*/
+/*        width:calc((100% - 70px)/ 4)*/
+/*    }*/
+/*}*/
+
+/*@media (min-width:768px) and (max-width:1199px) {*/
+/*    .col3*/
+/*    {*/
+/*        width:calc((100% - 8vw)/ 3)*/
+/*    }*/
+/*}*/
+
+/*@media (min-width:1200px) {*/
+/*    .col3*/
+/*    {*/
+/*        width:calc((100% - 120px)/ 3)*/
+/*    }*/
+/*}*/
+
+/*@media (min-width:768px) and (max-width:1199px) {*/
+/*    .col4*/
+/*    {*/
+/*        width:calc((100% - 120px)/ 4)*/
+/*    }*/
+/*}*/
+
+/*@media (min-width:1200px) {*/
+/*    .col4 {*/
+/*        width: calc((100% - 120px) / 4)*/
+/*    }*/
+/*}*/
+/*    @media (min-width:768px) and (max-width:1199px) {*/
+/*        .w70*/
+/*        {*/
+/*            width:5vw*/
+/*        }*/
+/*    }*/
+
+/*    @media (min-width:1200px) {*/
+/*        .w70*/
+/*        {*/
+/*            width:70px*/
+/*        }*/
+/*    }*/
+
+/*    @media (min-width:768px) and (max-width:1199px) {*/
+/*        .w120*/
+/*        {*/
+/*            width:8vw*/
+/*        }*/
+/*    }*/
+
+/*    @media (min-width:1200px) {*/
+/*        .w120*/
+/*        {*/
+/*            width:120px*/
+/*        }*/
+/*    }*/
+
+/*    @media (min-width:768px) and (max-width:1199px) {*/
+/*        .w180*/
+/*        {*/
+/*            width:14vw*/
+/*        }*/
+/*    }*/
+
+/*    @media (min-width:1200px) {*/
+/*        .w180*/
+/*        {*/
+/*            width:180px*/
+/*        }*/
+/*    }*/
+
+/*    .bgDarkGreen1*/
+/*    {*/
+/*        background-color:#3A9E9B*/
+/*    }*/
+
+/*    .bgDarkGreen2*/
+/*    {*/
+/*        background-color:#0F5A5E*/
+/*    }*/
+
+/*    .bgDarkGreen3*/
+/*    {*/
+/*        background-color:#0A4750*/
+/*    }*/
+
+/*    .bgLightGreen*/
+/*    {*/
+/*        background-color:rgba(15,90,94,.16)*/
+/*    }*/
+
+/*    .checkbox input*/
+/*    {*/
+/*        padding:0;*/
+/*        height:initial;*/
+/*        width:initial;*/
+/*        display:none*/
+/*    }*/
+
+/*    .checkbox label*/
+/*    {*/
+/*        position:relative;*/
+/*        padding-left:30px;*/
+/*        font-size:14px;*/
+/*        color:#20265A*/
+/*    }*/
+
+/*    .checkbox input:checked+label:after,.checkbox label:before*/
+/*    {*/
+/*        content:'';*/
+/*        position:absolute*/
+/*    }*/
+
+/*    @media (min-width:768px) and (max-width:1199px) {*/
+/*        .checkbox label*/
+/*        {*/
+/*            font-size:1vw;*/
+/*            padding-left:2vw*/
+/*        }*/
+/*    }*/
+
+/*    .checkbox label:before*/
+/*    {*/
+/*        -webkit-appearance:none;*/
+/*        background-color:transparent;*/
+/*        border:2px solid #9DA6C7;*/
+/*        padding:8px;*/
+/*        display:inline-block;*/
+/*        top:2px;*/
+/*        left:0;*/
+/*        vertical-align:middle;*/
+/*        cursor:pointer;*/
+/*        border-radius:2px*/
+/*    }*/
+
+/*    @media (min-width:768px) {*/
+/*        .checkbox label:before*/
+/*        {*/
+/*            height:18px;*/
+/*            width:18px;*/
+/*            top:0*/
+/*        }*/
+/*    }*/
+
+/*    .checkbox input:checked+label:after*/
+/*    {*/
+/*        display:block;*/
+/*        top:3px;*/
+/*        left:6px;*/
+/*        width:6px;*/
+/*        height:12px;*/
+/*        border:solid #fff;*/
+/*        border-width:0 2px 2px 0;*/
+/*        transform:rotate(45deg)*/
+/*    }*/
+
+/*    .checkbox input:checked+label:before*/
+/*    {*/
+/*        background-color:#5562DA;*/
+/*        border-color:#5562DA*/
+/*    }*/
+
+/*    .radio input[type=radio]*/
+/*    {*/
+/*        display:none*/
+/*    }*/
+
+/*    .radio label*/
+/*    {*/
+/*        position:relative;*/
+/*        padding-left:30px;*/
+/*        color:#20265A;*/
+/*        font-size:14px*/
+/*    }*/
+
+/*    @media (min-width:768px) and (max-width:1199px) {*/
+/*        .checkbox input:checked+label:after*/
+/*        {*/
+/*            width:.5vw;*/
+/*            height:1vw;*/
+/*            top:1px;*/
+/*            left:.5vw*/
+/*        }*/
+
+/*        .radio label*/
+/*        {*/
+/*            font-size:1vw;*/
+/*            padding-left:2vw;*/
+/*            transition:all .2s*/
+/*        }*/
+
+/*        .radio label:hover*/
+/*        {*/
+/*            color:#EA6200*/
+/*        }*/
+/*    }*/
+
+
