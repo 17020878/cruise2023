@@ -1,4 +1,23 @@
-
+@media (min-width: 768px) and (max-width: 1199px){
+    .datepicker input {
+        height: 3.3vw;
+    }
+    .text28{
+        font-size: 2vw;
+    }
+    .searchBox__input>svg{
+        width: 1.2vw;
+    }
+    .searchBox__input p svg{
+        width: .8vw;
+    }
+    .homeLeft__icon p{
+        margin-left: 0;
+    }
+    .text16{
+        font-size: 1.1vw;
+    }
+}
 .homeLeft{
     transition: width .15s cubic-bezier(0.77,0,0.175,1);
     width: 240px;
@@ -8,13 +27,10 @@
     height: 100%;
     border-right: 1px solid #E7EAF1;
 }
-.homeRight{
+.homeRight,.footer{
     padding-left: 240px;
     width: 100%;
     transition: padding-left .15s cubic-bezier(0.77,0,0.175,1);
-}
-.footer{
-    padding-left: 240px;
 }
 .homeLeft__tab{
     padding: 20px;
@@ -467,6 +483,9 @@ section.home{
 .footer__list .col-4{
     padding-right: 40px;
 }
+.footer__platform{
+    display: flex;
+}
 .footer__platform img{
     width: 120px;
     height: 100%;
@@ -479,10 +498,11 @@ section.home{
 .footer__list ul li a svg{
     margin-right: 16px;
 }
-.footer__payment{
+.footer__payment, .footer__us{
+    display: flex;
     padding-top: 12px;
 }
-.footer__payment svg{
+.footer__payment svg, .footer__us svg{
     margin-right: 16px;
 }
 
@@ -493,8 +513,7 @@ section.home{
 }
 .container-auto{
     margin: 0 auto;
-    padding: 0 1.875em;
-    max-width: 1200px;
+    padding: 0 2.5em;
 }
 
 /*@media (min-width: 83.75em){*/
@@ -797,10 +816,19 @@ section.home{
     height: 100%;
     object-fit: cover;
 }
-.destinations__main,.destinations__image{
+.destinations__main{
     display: flex;
 }
-.destinations__main > div {
+.destinations__image{
+    display: flex;
+    margin: 0 -8px;
+}
+.image-100{
+    padding: 0 8px;
+    width: 100%;
+}
+.image-50{
+    padding: 0 8px;
     width: 50%;
 }
 .btn.btn-outline-orange{
@@ -896,6 +924,9 @@ section.home{
 .contactIcon{
     display: flex;
     margin-top: 30px;
+}
+.form-control[readonly]{
+    background-color: #fff;
 }
 #subject.form-control{
     color: #5C6AA1;
@@ -1699,12 +1730,17 @@ section.home{
     left:15px;
     z-index:9
 }
+
 .searchBox__input{
     position: relative;
 }
-@media (min-width: 767px){
 
-}
+
+
+/*===========================================================================================================*/
+
+
+
 @media (max-width: 767px){
     .homeLeft__option .homeLeft__group:last-child{
         border-top: 1px solid #C3C9DE;
@@ -1796,7 +1832,7 @@ section.home{
         min-width: 100%;
     }
     .homeLeft.open {
-         visibility: visible;
+        visibility: visible;
     }
     .iconReaction p{
         right: -6px;
@@ -1863,4 +1899,84 @@ section.home{
     .form-control-lg{
         font-size: 16px;
     }
+    .homeOffers,.homePackages,.homeChoose__cruise,.homeDestinations,.homeClients,.homeTop__cruise{
+        padding: 0 15px;
+    }
+    .offers__img {
+        width: 100%;
+    }
+    .homePackages__item{
+        margin-bottom: 20px;
+        width: 100%;
+    }
+    .slick-next{
+        right: 20%;
+    }
+    .slick-prev{
+        left: 20%;
+    }
+    .homePackages{
+        margin-bottom: 70px;
+    }
+    .homeChoose__cruise,.homeDestinations, .homeClients{
+        margin-bottom: 70px;
+    }
+    .homeIntern__col{
+        padding-bottom: 24px;
+    }
+    .homeDestinations__item,.homeClients__item{
+        padding: 0;
+    }
+    .destinations,.clients{
+        box-shadow: unset;
+        margin-bottom: 20px;
+    }
+    .homeCheap__list li{
+        width: calc(100%/2);
+    }
+    .homeEmail__from{
+        display: block;
+    }
+    .homeEmail__from .w50{
+        width: 100%;
+        text-align: center;
+    }
+    .footer{
+        padding-left: 0;
+    }
+    .footer__list ul{
+        max-width: 100%;
+    }
+    .footer__top{
+        padding: 1.5em 15px;
+    }
+    .footer__list ul:not(:last-child){
+        margin-top: 15px;
+        border-bottom: 1px solid #C3C9DE;
+    }
+    .footer__connect{
+        border-bottom: unset!important;
+        display: flex;
+        justify-content: space-between;
+    }
+    .footer__app{
+        display: flex;
+        justify-content: center;
+    }
+    .footer__platform img{
+        padding-top: 0;
+    }
+    .footer__title{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .footer__page p:not(:last-child){
+        padding-bottom: 16px;
+    }
+    .liTitle.rotate svg{
+        transform: rotate(180deg);
+        transition: all .3s ease-in-out;
+    }
+
 }
