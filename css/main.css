@@ -921,6 +921,14 @@ section.home{
     align-items: center;
     margin: 0 auto 16px;
 }
+.destinations__img {
+    height: 260px;
+}
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 .contactIcon{
     display: flex;
     margin-top: 30px;
@@ -1923,15 +1931,20 @@ section.home{
     }
     .homeIntern__col{
         padding-bottom: 24px;
+        margin-bottom: 24px;
     }
-    .homeDestinations__item,.homeClients__item{
-        padding: 0;
+    .homeDestinations__item,.homeClients__item,.homeIntern__col,.homePackages__group{
+        padding: 0 4px;
     }
     .destinations,.clients{
         box-shadow: unset;
         margin-bottom: 20px;
     }
+    .homeOffers__slide{
+        margin: 0;
+    }
     .homeCheap__list li{
+        padding: 4px 15px;
         width: calc(100%/2);
     }
     .homeEmail__from{
@@ -1963,6 +1976,9 @@ section.home{
         display: flex;
         justify-content: center;
     }
+    .homeOffers__item{
+        padding: 0 4px;
+    }
     .footer__platform img{
         padding-top: 0;
     }
@@ -1978,5 +1994,167 @@ section.home{
         transform: rotate(180deg);
         transition: all .3s ease-in-out;
     }
+    .roomSelect{
+        width: 100%;
+    }
+    .select__box{
+        width: calc(100%/2 - 15px);
+    }
+    .box__passenger {
+        display: flex;
+        width: 100%;
+        padding-top: 10px;
+    }
 
+    .cruiseResult .searchBox.open {
+        visibility: visible;
+    }
+    .cruiseResult .searchBox {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 20;
+        transition: all .3s ease-in-out;
+        visibility: hidden;
+        padding: 0;
+        min-width: 100%;
+        margin: 0;
+        background: unset;
+    }
+    .cruiseResult__left{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 20;
+        transition: all .3s ease-in-out;
+        visibility: hidden;
+        padding: 0;
+        min-width: 100%;
+        margin: 0;
+        background: unset;
+    }
+    .cruiseResult__left.open {
+        visibility: visible;
+    }
+    .searchBox.open .searchBox__main {
+         visibility: visible;
+         transform: none;
+    }
+    .cruiseResult__left.open .cruiseResult__filter{
+        visibility: visible;
+        transform: none;
+    }
+    .cruiseResult__right{
+        max-width: 100%;
+        flex: auto;
+    }
+    .cruiseResult__pagination{
+        margin-right: 0;
+    }
+    .cruiseResult__table__cell img{
+        width: 240px;
+    }
+    .cruiseResult__table__cell .ulGroup__text > li:last-child{
+        display: flex;
+        justify-content: right;
+        width: 100%;
+    }
+    .tableIcon__star{
+        margin-left: 0;
+    }
+    .ulGroup__text li{
+        display: block;
+    }
+    .table__right__top{
+        justify-content: left;
+    }
+    .table__right__down{
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+    .cruiseResult__table__row,.cruiseResult__header{
+        border-radius: 0;
+    }
+    .cruiseResult__table__left{
+        width: 100%;
+    }
+    .cruiseResult__filter {
+        width: 100%;
+        background-color: #fff;
+        transition: all .3s ease-in-out;
+        visibility: hidden;
+        transform: translateX(-50%);
+        padding: 16px;
+        z-index: 99;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+    }
+    .cruiseResult.searchBox.open .searchBox__main {
+        visibility: visible;
+        transform: none;
+    }
+    .cruiseResult .searchBox__main {
+        width: 100%;
+        background-color: #fff;
+        transition: all .3s ease-in-out;
+        visibility: hidden;
+        transform: translateX(-50%);
+        padding: 16px;
+        z-index: 99;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+    }
+    .searchBox.open .navbarBox__backdrop {
+        visibility: visible;
+        opacity: 1;
+    }
+    .cruiseResult .closeSearch__cruise{
+        display: block;
+    }
+
+    .closeSearch__cruise{
+        display: none;
+    }
+    .cruiseResult .searchBox__header{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .cruiseResult .searchBox__header svg{
+        position: absolute;
+        left: 0;
+        margin-left: 16px;
+    }
+    .cruiseEdit__search{
+        margin: 8px 0;
+        display: flex;
+        justify-content: space-between;
+        background: #ffffff;
+        align-items: center;
+        padding: 24px 16px;
+    }
+    .editSearch__date{
+        display: flex;
+        border-right: 1px solid #C3C9DE;
+        width: 40%;
+    }
+    .editSearch__time{
+        display: flex;
+        width: 60%;
+    }
+    .editSearch__time svg, .editSearch__time p{
+        margin-left: 16px;
+    }
+    .editSearch__date svg{
+        margin-right: 16px;
+    }
 }
