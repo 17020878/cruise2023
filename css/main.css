@@ -948,6 +948,9 @@ img{
 .contactUs__form .form-group{
     position: relative;
 }
+.ratingBottom__img{
+    width: 60px;
+}
 .contactUs__form svg{
     position: absolute;
     top: 50%;
@@ -1738,7 +1741,9 @@ img{
     left:15px;
     z-index:9
 }
-
+.cruiseService__info__group{
+    display: flex;
+}
 .searchBox__input{
     position: relative;
 }
@@ -2006,10 +2011,10 @@ img{
         padding-top: 10px;
     }
 
-    .cruiseResult .searchBox.open {
+    .cruiseResult .searchBox.open, .cruiseDetails .searchBox.open {
         visibility: visible;
     }
-    .cruiseResult .searchBox {
+    .cruiseResult .searchBox,.cruiseDetails .searchBox {
         position: fixed;
         top: 0;
         left: 0;
@@ -2055,6 +2060,9 @@ img{
     .cruiseResult__pagination{
         margin-right: 0;
     }
+    .cruiseEdit__search > div{
+        padding-right: 10px;
+    }
     .cruiseResult__table__cell img{
         width: 240px;
     }
@@ -2062,6 +2070,12 @@ img{
         display: flex;
         justify-content: right;
         width: 100%;
+    }
+    .searchBox__header.showMobile{
+        padding: 14px 10px;
+    }
+    .cruiseItinerary__cont,.cruiseAmenities, .inclusions__options{
+        padding: 10px 10px;
     }
     .tableIcon__star{
         margin-left: 0;
@@ -2096,11 +2110,11 @@ img{
         justify-content: space-between;
         height: 100%;
     }
-    .cruiseResult.searchBox.open .searchBox__main {
+    .searchBox.open .searchBox__main {
         visibility: visible;
         transform: none;
     }
-    .cruiseResult .searchBox__main {
+    .searchBox .searchBox__main {
         width: 100%;
         background-color: #fff;
         transition: all .3s ease-in-out;
@@ -2117,22 +2131,36 @@ img{
         visibility: visible;
         opacity: 1;
     }
-    .cruiseResult .closeSearch__cruise{
+    .searchBox .closeSearch__cruise{
         display: block;
     }
 
     .closeSearch__cruise{
         display: none;
     }
-    .cruiseResult .searchBox__header{
+    .searchBox .searchBox__header{
         display: flex;
         align-items: center;
         justify-content: center;
     }
-    .cruiseResult .searchBox__header svg{
+    .searchBox .searchBox__header svg{
         position: absolute;
         left: 0;
         margin-left: 16px;
+    }
+    .cruiseService__filter p{
+        width: 25%;
+    }
+    .cruiseFilter__button{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        margin-top: -4px;
+    }
+    .cruiseFilter__button > button {
+        padding: 4px 0;
+        margin: 6px;
+        border-radius: 4px;
     }
     .cruiseEdit__search{
         margin: 8px 0;
@@ -2145,16 +2173,219 @@ img{
     .editSearch__date{
         display: flex;
         border-right: 1px solid #C3C9DE;
-        width: 40%;
     }
     .editSearch__time{
+        border-right: 1px solid #C3C9DE;
         display: flex;
-        width: 60%;
     }
-    .editSearch__time svg, .editSearch__time p{
-        margin-left: 16px;
+    .cruiseResult__title{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+    .editSearch__time p{
+        padding: 0 10px;
     }
     .editSearch__date svg{
         margin-right: 16px;
+    }
+    .cruiseDetails__main{
+        margin-top: 0;
+    }
+    .cruiseImage__item{
+        height: 260px;
+    }
+    .cruiseService__slide .slick-dots{
+        bottom: 18px;
+    }
+    .cruiseService__slide .slick-dots li.slick-active button {
+        background: #fff;
+    }
+    .cruiseService__slide .slick-dots li button {
+        background: #c3c3c3;
+    }
+    .cruiseService__image__group.showMobile{
+        position: relative;
+    }
+    .cruiseService__title.showMobile{
+        padding: 8px;
+        display: block;
+        margin: 0;
+        background: #fff;
+    }
+    .cruiseService__inf{
+        margin-top: 0;
+    }
+    .cruiseService__page{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        padding: 6px 12px;
+        margin: 12px;
+        background: #20265A;
+        opacity: .7;
+        border-radius: 4px;
+    }
+    .cruiseInf__general{
+        padding: 4px 16px;
+    }
+    .cruiseInf__general p{
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+    .cruiseInf__general p svg{
+        margin-right: 14px;
+    }
+    .cruiseInf__cont{
+        display: block;
+        padding: 8px;
+    }
+    .cruiseInf__cont > div{
+        width: 100%;
+        padding: 8px 0;
+    }
+    .cruiseInf__tab{
+        display: flex;
+        padding-top: 12px;
+    }
+    .cruiseInf__tab > button{
+        width: 50%;
+    }
+    .cruiseInf__tab > button p{
+        padding-bottom: 10px;
+    }
+    .cruiseInf__tab > button.active{
+        border-bottom: 3px solid #5562DA;
+    }
+    .cruiseInf__tab > button{
+        border-bottom: 1px solid #E7EAF1;
+    }
+    .cruiseAmenities__group ul{
+        width: 100%;
+    }
+    .cruiseAmenities__group{
+        display: block;
+    }
+    .cruiseService__table__main{
+        padding: 24px 6px;
+    }
+    .cruiseService__table__cell:nth-child(1){
+        padding: 12px 8px;
+        width: 54%;
+    }
+    .cruiseService__table__cell:nth-child(3),.cruiseService__table__cell:nth-child(5){
+        width: 23%;
+    }
+    .cruiseService__item__right .text20{
+        font-size: 16px;
+    }
+    .cruiseService__table__cell ul li{
+        display: block;
+    }
+    .cruiseService__item__left{
+        width: 50px;
+        height: 50px;
+    }
+    .cruiseService__icon {
+        bottom: 2px;
+        right: 2px;
+        padding: 3px;
+    }
+    .cruiseService__icon svg {
+        margin-right: 4px;
+        width: 12px;
+        height: 12px;
+    }
+
+    .cruiseService__table__cell:nth-child(1) {
+        display: block;
+    }
+    .cruiseService__item__bottom{
+        padding: 4px 0;
+    }
+    .cruiseService__table__cell p {
+        display: block;
+    }
+
+    .customer__rating__score.open {
+        visibility: visible;
+    }
+    .customer__rating__score {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 20;
+        transition: all .3s ease-in-out;
+        visibility: hidden;
+        padding: 0;
+        min-width: 100%;
+    }
+    .customer__rating__score {
+        width: 240px;
+        background: #ffffff;
+        height: 100%;
+        border-right: 1px solid #E7EAF1;
+        margin: 0;
+    }
+    .customer__rating__score.open .customer__rating__score__main {
+        visibility: visible;
+        transform: none;
+    }
+    .customer__rating__score__main {
+        width: 100%;
+        background-color: #fff;
+        transition: all .3s ease-in-out;
+        visibility: hidden;
+        transform: translateX(-50%);
+        z-index: 99;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: inherit;
+        overflow: auto;
+    }
+    .rating__header button{
+        padding: 20px;
+    }
+    .rating__header{
+        border-bottom: 1px solid #E7EAF1;
+    }
+    .rating__top{
+        display: block;
+        padding: 0 16px;
+    }
+    .rating__title{
+        margin-top: 10px;
+    }
+    .rating__top > div{
+        width: 100%;
+    }
+    .rating__number{
+        margin: 0 -20px;
+    }
+    .ratingBottom__point, .ratingBottom__user,.ratingBottom__cont{
+        width: 100%;
+    }
+    .rating__bottom__group{
+        display: block;
+    }
+    .rating__bottom__group > div{
+        padding: 10px 0;
+    }
+    .modal-dialog{
+        margin: 12px;
+    }
+    .modal-body{
+        padding: 0;
+    }
+    .roomPopup__amenities,.roomPopup__image{
+        width: 100%;
+    }
+    .roomPopup__top{
+        display: block;
     }
 }
