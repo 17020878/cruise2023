@@ -1805,8 +1805,22 @@
                     </button>
                     <div class="roomPopup__body">
                         <div class="roomPopup__top">
-                            <div class="roomPopup__image">
-                                <img src="images/room1.jpg">
+                            <div class="roomPopup__group">
+                                <div class="roomPopup__slide">
+                                    <div class="roomPopup__image">
+                                        <img src="images/room1.jpg">
+                                    </div>
+                                    <div class="roomPopup__image">
+                                        <img src="images/room1.jpg">
+                                    </div>
+                                    <div class="roomPopup__image">
+                                        <img src="images/room1.jpg">
+                                    </div>
+                                    <div class="roomPopup__image">
+                                        <img src="images/room1.jpg">
+                                    </div>
+                                </div>
+                                <div class="appendArrows"></div>
                             </div>
                             <div class="roomPopup__amenities">
                                 <p class="text24 medium blueDark">Most Popular Amenities</p>
@@ -1979,21 +1993,44 @@
                         </div>
                         <div class="roomPopup__bottom">
                             <div class="roomType__item">
-                                <p class="text16 medium blueDark">All (60)</p>
-                                <p class="text16 medium blueDark">Rooms (12)</p>
-                                <p class="text16 medium blueDark">Property views (6)</p>
-                                <p class="text16 medium blueDark">Facilities (4)</p>
-                                <p class="text16 medium blueDark">Dining (5)</p>
-                                <p class="text16 medium blueDark">Other (1)</p>
+                                <div class="roomType__item__cont">
+                                    <p class="text16 medium blueDark">All (60)</p>
+                                </div>
+                                <div class="roomType__item__cont">
+                                    <p class="text16 medium blueDark">Rooms (12)</p>
+                                </div>
+                                <div class="roomType__item__cont">
+                                    <p class="text16 medium blueDark">Property views (6)</p>
+                                </div>
+                                <div class="roomType__item__cont">
+                                    <p class="text16 medium blueDark">Facilities (4)</p>
+                                </div>
+                                <div class="roomType__item__cont">
+                                    <p class="text16 medium blueDark">Dining (5)</p>
+                                </div>
+                                <div class="roomType__item__cont">
+                                    <p class="text16 medium blueDark">Other (1)</p>
+                                </div>
                             </div>
                             <div class="roomType__image">
-                                <img src="images/room2.jpg">
-                                <img src="images/room3.jpg">
-                                <img src="images/room4.jpg">
-                                <img src="images/room5.jpg">
-                                <img src="images/room6.jpg">
-                                <img src="images/room7.jpg">
-                                <img src="images/room8.jpg">
+                                <div class="roomType__item__img">
+                                    <img src="images/room3.jpg">
+                                </div>
+                                <div class="roomType__item__img">
+                                    <img src="images/room4.jpg">
+                                </div>
+                                <div class="roomType__item__img">
+                                    <img src="images/room5.jpg">
+                                </div>
+                                <div class="roomType__item__img">
+                                    <img src="images/room6.jpg">
+                                </div>
+                                <div class="roomType__item__img">
+                                    <img src="images/room7.jpg">
+                                </div>
+                                <div class="roomType__item__img">
+                                    <img src="images/room8.jpg">
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -2295,6 +2332,24 @@
                 breakpoint: 767,
                 settings: {
                     arrows: false
+                }
+            }
+        ]
+    });
+    $(".roomPopup__slide").slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        //autoplay: true,
+        speed: 800,
+        autoplaySpeed: 5000,
+        arrows: true,
+        dots: false,
+        appendArrows: '.appendArrows',
+        responsive: [
+            {
+                breakpoint: 767,
+                settings: {
+                    arrows: true
                 }
             }
         ]

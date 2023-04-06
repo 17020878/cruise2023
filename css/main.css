@@ -905,6 +905,9 @@ section.home{
     font-size: 60px;
     color: #fff;
 }
+.roomPopup__image{
+    height: 660px;
+}
 .thingTodo__banner p,.newBanner p,.dealBanner p,.yourCruise__banner p,.faqBanner p,.contactUs__banner p{
     text-align: center;
 }
@@ -932,6 +935,32 @@ img{
 .contactIcon{
     display: flex;
     margin-top: 30px;
+}
+#roomDetailPopup .close{
+    z-index: 999;
+}
+#roomDetailPopup .slick-prev {
+    left: 5%;
+    top: 50%;
+}
+#roomDetailPopup .slick-next {
+    right: 5%;
+    top: 50%;
+}
+
+.roomPopup__group{
+    position: relative;
+    width: 60%;
+}
+#roomDetailPopup .slick-arrow:before{
+    color: #fff;
+}
+#roomDetailPopup .slick-arrow{
+    background: #5C6AA1;
+    opacity: .5;
+}
+#roomDetailPopup .appendArrows{
+    position: unset;
 }
 .form-control[readonly]{
     background-color: #fff;
@@ -1037,11 +1066,19 @@ img{
 .cruiseInf__left p{
     padding: 8px 0;
 }
+.roomType__item__img{
+    width: 300px;
+    height: 100px;
+    margin-right: 10px;
+}
 .cruiseInf__left ul li p svg{
     margin-right: 10px;
 }
 .cruiseInf__right img{
     padding-bottom: 16px;
+}
+.roomType__image{
+    display: flex;
 }
 .cruiseInf__right{
     padding: 8px;
@@ -1360,8 +1397,8 @@ img{
     display: flex;
     background: #fff;
 }
-.roomPopup__image{
-    width: 60%;
+#roomDetailPopup .slick-prev{
+    left: 5%;
 }
 .roomPopup__amenities{
     background: #fff;
@@ -1411,11 +1448,7 @@ img{
     margin-right: 8px;
 }
 .roomType__image img{
-    width: calc(100%/7 - 10px);
-}
-.roomPopup__image img{
-    height: 100%;
-    object-fit: cover;
+    width: 100%
 }
 .selectRoom__button{
     margin-top: 16px;
@@ -1821,6 +1854,9 @@ img{
         transition: all .3s ease-in-out;
         visibility: hidden;
         opacity: 0;
+    }
+    .roomPopup__group{
+        width: 100%;
     }
     .homeLeft.open .homeLeft__main {
         visibility: visible;
@@ -2382,10 +2418,34 @@ img{
     .modal-body{
         padding: 0;
     }
+    .roomPopup__image{
+        height: 360px;
+    }
     .roomPopup__amenities,.roomPopup__image{
         width: 100%;
     }
     .roomPopup__top{
         display: block;
+    }
+
+    .roomType__item__cont{
+        flex: 0 0 70%;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .roomPopup__bottom{
+        overflow: auto;
+        width: 100%;
+        margin-bottom: 30px;
+        padding: 0 8px
+    }
+    .roomType__item{
+        padding: 0;
+    }
+    .roomType__item__img{
+        flex: 0 0 50%;
+        height: 150px;
+        width: 100%;
+        margin-right: 10px;
     }
 }
