@@ -59,15 +59,13 @@
 .newFlex__group .col-6:last-child{
     padding-left: 12px;
 }
-.newFlex__item img,.deals__img img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-.newPost__group,.newPost__slide{
+.newPost__group,.newPost__offers{
     margin-bottom: 40px;
 }
-.newPost__slide{
+.newFlex__image{
+    height: 190px;
+}
+.newPost__offers{
     padding-bottom: 80px;
 }
 .newDetails__main{
@@ -193,12 +191,6 @@
 .newFlex__col{
     width: 50%;
     padding: 0 12px;
-    height: 254px;
-}
-.newFlex__card img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
 }
 .newFlex__card:before{
     content: "";
@@ -217,7 +209,7 @@
 }
 .newFlex__card{
     position: relative;
-    height: 508px;
+    height: 555px;
     width: 100%;
 }
 .blueP400{
@@ -387,7 +379,7 @@ section.home{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
 }
 .destinations__cont p{
-    padding: 16px;
+    padding: 16px 0;
 }
 .bestDeals{
     padding: 40px 0;
@@ -662,13 +654,9 @@ section.home{
     object-fit: cover;
     border-radius: 8px;
 }
-.thingImage img:first-child{
-    width: calc(100%/3 - 20px);
-    margin-right: 20px;
-}
 .thingImage{
     padding: 12px 0;
-    width: 100%;
+    height: 360px;
     display: flex;
 }
 .thingTodo__item .offers svg{
@@ -857,6 +845,11 @@ section.home{
 .destination__cont p:nth-child(2){
     font-size: 30px;
 }
+.destinations .homeRight__header,.destinations__body .homeRight__header{
+    margin: 0 auto;
+    padding: 0 4.5em;
+}
+
 .destination__banner{
     display: flex;
     height: 640px;
@@ -947,7 +940,19 @@ img{
     right: 5%;
     top: 50%;
 }
-
+.passenger__footer .footer__top{
+    padding: 2.5em 0;
+}
+.passenger__footer{
+    padding-left: 0;
+}
+.passenger__footer .container__hide{
+    max-width: 80%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
 .roomPopup__group{
     position: relative;
     width: 60%;
@@ -1597,6 +1602,9 @@ img{
     display: flex;
     align-items: center;
 }
+.destinations__detail__image{
+    height: 420px;
+}
 .formBox__service p,.formBox__free p,.cancel__refund p{
     margin-right: 24px;
     display: flex;
@@ -1612,6 +1620,9 @@ img{
 }
 .formBox__body > div{
     padding: 8px 0;
+}
+.formBox__term::-webkit-scrollbar-thumb {
+    background: #5C6AA1;
 }
 .cancel__refund{
     background: #F6FFED;
@@ -1640,9 +1651,7 @@ img{
 .passenger__footer .container{
     padding: 0 -15px;
 }
-.passenger__footer .footer__top{
-    padding: 40px 0;
-}
+
 .tripSummary__cont{
     display: flex;
     padding: 8px 0;
@@ -1811,7 +1820,7 @@ img{
         margin-bottom: -24px;
     }
     .homeRight__header{
-        padding: 22px 16px;
+        padding: 22px 16px!important;
         background: #fff;
     }
     .container-auto{
@@ -2448,4 +2457,253 @@ img{
         width: 100%;
         margin-right: 10px;
     }
+    .passenger__header.showMobile button{
+        position: absolute;
+        left: 0;
+        margin-left: 16px;
+    }
+    .passenger__header.showMobile{
+        padding: 16px 20px;
+        background: #fff;
+        border-bottom: 1px solid #E7EAF1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .passenger__body{
+        margin-top: 16px;
+    }
+    .passenger__body .container{
+        max-width: 100% !important;
+        margin: 0;
+        padding: 0;
+    }
+    .tripSummary__body{
+        padding: 14px 8px;
+    }
+    .flightPassenger__right .flexGroup2{
+        padding: 0 8px;
+    }
+    .flightPassenger__row{
+        display: block;
+        flex-wrap: unset;
+    }
+    .formBox__body{
+        padding: 8px;
+    }
+    .formBox__title{
+        display: block;
+    }
+
+    .formBox__service{
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: flex-start;
+    }
+    .formBox__service > p{
+        width: calc(100% /3);
+        margin-right: 0;
+        padding-bottom: 10px;
+    }
+    .formBox__free{
+        width: 100%;
+    }
+    .formBox__free p{
+        margin-right: 0;
+    }
+    .flightPassenger__left{
+        margin-bottom: 16px;
+    }
+    .passenger__footer .container__hide{
+        max-width: 100%;
+    }
+    .review__header.showMobile {
+        padding: 16px 20px;
+        background: #fff;
+        border-bottom: 1px solid #E7EAF1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .review__header.showMobile button {
+        position: absolute;
+        left: 0;
+        margin-left: 16px;
+    }
+    .flightReview{
+        margin-top: 0;
+    }
+    .review__body .container {
+        max-width: 100% !important;
+        margin: 0;
+        padding: 0;
+    }
+    .orderCode,.review__body .container > div:first-child{
+        padding: 0 8px;
+    }
+    .review__body{
+        margin-top: 20px;
+    }
+    .formBox__review__item .formBox__image{
+        width: 40%;
+        height: 300px;
+        padding-right: 8px;
+    }
+    .formBox__review__item .formBox__image img{
+        border-radius: 8px;
+    }
+    .formBox__review__item .formBox__cont{
+        width: 60%;
+    }
+    .review__title {
+        margin-left: 0;
+    }
+    .travelerTable__header{
+        display: block;
+        padding-bottom: 5px;
+    }
+    .formBox__contact,.formBox__term{
+        margin-left: 0;
+    }
+    .formBox__term{
+        margin-right: 0;
+    }
+    .travelerTable__cell{
+        display: flex;
+        justify-content: space-between;
+    }
+    .formBox__contact .travelerTable__header:last-child{
+        border-bottom: unset;
+    }
+    .travelerTable__title{
+        margin-top: 16px;
+    }
+    .flightReview__checkbox{
+        padding: 0 8px;
+    }
+    .flightReview__btn{
+        padding: 8px;
+        margin-top: 20px;
+    }
+    .flightReview__btn .btn{
+        min-width: 100%;
+    }
+    .destination__cont{
+        text-align: center;
+    }
+    .destination__cont p:nth-child(1) {
+        font-size: 36px;
+    }
+    .destination__cont p:nth-child(2) {
+        font-size: 24px;
+    }
+    .destination__cont p:nth-child(3) {
+        width: 100%;
+        margin: 30px 10px;
+    }
+    .btn.btn-lg {
+        height: 40px;
+    }
+    .destinations__main{
+        display: block;
+    }
+    .destinations__item{
+        padding: 30px 8px;
+    }
+    .row{
+        display: block;
+    }
+    .col-6,.col-4,.col-8{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .destinations__image img {
+        height: 215px;
+    }
+    .column-reverse{
+        flex-direction: column-reverse;
+        display: flex;
+    }
+    .desDetail__cont{
+        padding: 0 8px;
+    }
+    .thingTodo__banner p, .newBanner p:first-child, .dealBanner p:first-child, .yourCruise__banner p:first-child, .faqBanner p:first-child, .contactUs__banner p:first-child {
+        font-size: 36px;
+        color: #fff;
+    }
+    .thingTodo__cont{
+        padding: 32px 8px;
+    }
+    .titleDetail span,.titleDetail{
+        font-size: 16px;
+    }
+    .thingTodo__suggest{
+        padding: 0 8px;
+    }
+    .thingTodo__group{
+        margin-bottom: 20px;
+    }
+    .newDetails__main{
+        padding: 20px 0;
+    }
+    .newDetails__group{
+        display: block;
+    }
+    .newFlex__card{
+        height: 320px;
+    }
+    .newFlex__group{
+        padding: 20px 8px;
+        margin-bottom: 40px;
+    }
+    .newFlex__slide{
+        margin-top: 16px;
+    }
+    .newFlex__group .row{
+        margin: 0;
+    }
+    .newFlex__group .col-6{
+        padding-left: 0!important;
+        padding-right: 0!important;
+    }
+    .newFlex__col{
+        padding: 0;
+        margin-bottom: 20px;
+    }
+    .newPost__item{
+        padding: 0;
+    }
+    .newPost__group{
+        padding: 0 8px;
+    }
+    .newPost__offers{
+        margin: 80px 0;
+        padding: 0 8px;
+    }
+    .postSlide__item{
+        width: 100%;
+    }
+    .newTitle p,.dealTitle p{
+        padding: 0 16px;
+    }
+    .bestDeals__item{
+        padding: 0 8px;
+        margin-bottom: 20px;
+    }
+    .faq__title .titleText{
+        width: 90%;
+    }
+    .faq__title .titleIcon{
+        width: 10%;
+    }
+    .contactUs__title p{
+        font-size: 24px;
+    }
+    .contactUs__email, .contactUs__phone{
+        width: 150px;
+    }
+    .contactUs__email{
+        margin-right: 16px;
+    }
+
 }
