@@ -2174,7 +2174,7 @@ img{
     }
     section.home .searchBox .searchBox__main{
         visibility: unset;
-        transform: translateX(0%);
+        transform: unset;
         padding: 0;
     }
     .searchBox.open .navbarBox__backdrop {
